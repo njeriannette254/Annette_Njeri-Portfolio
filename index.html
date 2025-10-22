@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Annette | My Heart's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <main>
+      <nav id="navigationBar">
+        <button id="homeBtn" class="nav-btn active">Home</button>
+        <button id="hobbiesBtn" class="nav-btn">Hobbies</button>
+        <button id="galleryBtn" class="nav-btn">Gallery</button>
+        <button id="triviaBtn" class="nav-btn">Trivia</button>
+        <button id="contactBtn" class="nav-btn">Contact</button>
+      </nav>
+
+      <section id="home" class="container page-section active">
+        <div class="content-card reveal-item">
+          <h1 class="fade-in-up">Hi, I'm Annette!</h1>
+          <figure class="profile-pic-container zoom-in">
+            <img
+              src="media/Solo/solo23.jpg"
+              alt="Annette's profile pic"
+              id="profile"
+            />
+            <figcaption class="fade-in-up">Annette Njeri Gachamba</figcaption>
+          </figure>
+          <h2 class="slide-in-left">Who is Annette?</h2>
+          <p class="fade-in">
+            <strong>ANNETTE NJERI GACHAMBA</strong> is a young, multi-talented
+            Kenyan girl with a dream of becoming a doctor. She desires to make
+            medical services affordable and easily available to those facing
+            financial instability and those located in remote areas.
+          </p>
+          <h2 class="slide-in-left">Personal Details</h2>
+          <ul class="fade-in">
+            <li><strong>Full Name:</strong> Annette Njeri Gachamba</li>
+            <li><strong>Date of Birth:</strong> 23rd October, 2005</li>
+            <li><strong>Height:</strong> 5'1"</li>
+            <li><strong>Dream Career:</strong> Doctor</li>
+          </ul>
+          <p class="fade-in">
+            Annette is known for her compassionate heart, her laughter that
+            lights up a room, and her determination to turn challenges into
+            opportunities. Beyond academics, she enjoys connecting with people,
+            exploring new ideas, and serving her community.
+          </p>
+          <div class="quick-facts fade-in">
+            <h2>Random Fun Facts About Annette</h2>
+            <div><strong>Favorite Color:</strong> Red</div>
+            <div><strong>Hobby:</strong> Dancing</div>
+            <div><strong>Dream Country:</strong> USA</div>
+            <div><strong>Coffee or Tea?</strong> Coffee</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="container page-section hidden">
+        <div class="content-card reveal-item">
+          <h1 class="fade-in-up">My Passions & Hobbies</h1>
+
+          <div class="hobby-item">
+            <h2 class="slide-in-left">Dancing 💃</h2>
+            <div class="hobby-details">
+              <figure class="hobby-pic zoom-in">
+                <img src="media/solo/dancer.jpg" alt="Annette dancing" />
+                <figcaption>Annette in dance attire</figcaption>
+              </figure>
+              <p class="fade-in">
+                Annette is a highly skilled dancer with a natural talent for
+                rhythm and expression. She lights up every stage she steps on,
+                blending grace, energy, and passion. Dance isn’t just a hobby
+                for her. It’s a gift. She has earned recognition for her
+                remarkable performances, including finishing second in the UoN
+                Talent Show 2024. Today, she leads the dance team at Every
+                Nation Church Nairobi, using her gift to glorify God.
+              </p>
+            </div>
+          </div>
+
+          <div class="hobby-item">
+            <h2 class="slide-in-left">Painting 🎨</h2>
+            <div class="hobby-details reverse-layout">
+              <figure class="hobby-pic zoom-in">
+                <img
+                  src="media/Edits-Scenery/editspic5.jpg"
+                  alt="Annette painting"
+                />
+                <figcaption>Annette's artwork</figcaption>
+              </figure>
+              <p class="fade-in">
+                Painting may not be her strongest skill, but it brings her deep
+                joy. Each brush stroke reflects her creativity and her love for
+                color and beauty. Her art may be imperfect, but it’s honest.
+                That’s what makes it uniquely Annette.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="container page-section hidden">
+        <div class="content-card reveal-item">
+          <h1 class="fade-in-up">Treasured Moments</h1>
+
+          <div class="gallery-category">
+            <h2 class="slide-in-left">Annette’s Solo Collection</h2>
+            <div class="gallery-grid" id="solo-gallery"></div>
+          </div>
+
+          <div class="gallery-category">
+            <h2 class="slide-in-left">Annette & Family</h2>
+            <div class="gallery-grid" id="family-gallery"></div>
+          </div>
+
+          <div class="gallery-category">
+            <h2 class="slide-in-left">Little Annette</h2>
+            <div class="gallery-grid" id="little-gallery"></div>
+          </div>
+
+          <div class="gallery-category">
+            <h2 class="slide-in-left">Annette with Friends</h2>
+            <div class="gallery-grid" id="friends-gallery"></div>
+          </div>
+
+          <div class="gallery-category">
+            <h2 class="slide-in-left">Beautiful Photos & Edits by Annette</h2>
+            <div class="gallery-grid" id="edits-scenery-gallery"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trivia -->
+      <section id="trivia" class="container page-section hidden">
+        <div class="content-card reveal-item">
+          <h1 class="fade-in-up">How Well Do You Know Annette?</h1>
+
+          <section id="introToQuizPage">
+            <p class="fade-in">
+              Hey there, you beautiful human! Welcome to the “How Well Do You
+              Know Annette?” challenge. It's a fun little corner of the internet
+              where we get to test just how closely you’ve been paying attention
+              to one of the most unforgettable people on earth. This quiz isn’t
+              your regular “what’s her favorite color” thing (okay, maybe a
+              little of that too). It’s a collection of carefully picked
+              nuggets; the funny, sweet, and downright iconic facts that make
+              Annette… well, Annette! Every question is a mini-celebration of
+              her world. Think you’ve got what it takes? Go ahead, dive in. Each
+              correct answer fills your progress bar higher, like your love and
+              admiration for her leveling up. But be warned! Every wrong answer
+              chips away at that score (and maybe your bragging rights). Whether
+              you’re her friend, her biggest fan, or someone just discovering
+              the legend that is Hastings herself, this quiz will either make
+              you smile, laugh… or realize you still have a lot to learn about
+              this masterpiece of a human being. Ready? Deep breath. Let’s clock
+              it!
+            </p>
+            <button id="toQuiz" class="action-button pop-in">
+              Start the Quiz!
+            </button>
+          </section>
+
+          <section id="quizPage" style="display: none">
+            <div id="scoreBar" class="slide-in-right">
+              <p id="score">0/0</p>
+            </div>
+
+            <div id="questionPanel" class="fade-in-up">
+              <h3 id="question">Question appears here</h3>
+              <div id="answers"></div>
+            </div>
+          </section>
+          <section id="endScreen" style="display: none">
+            <div class="hidden fade-in-up">
+              <h3>🎉 Quiz Complete!</h3>
+              <p id="finalScore"></p>
+              <button id="restartQuiz" class="action-button pop-in">
+                Play Again?
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section
+        id="contact"
+        class="container page-section"
+        style="display: none"
+      >
+        <div class="content-card reveal-item">
+          <h1 class="fade-in-up">Connect with Annette</h1>
+
+          <p class="fade-in">
+            Feel free to reach out to me through any of the following platforms.
+            I'd love to hear from you!
+          </p>
+          <figure class="contact-pic zoom-in">
+            <img src="media/Solo/solo3.jpg" alt="Annette contact pic" />
+          </figure>
+          <ul class="contact-list fade-in">
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:njeriannette7@gmail.com" target="_blank"
+                >njeriannette7@gmail.com</a
+              >
+            </li>
+            <li>
+              <strong>Phone:</strong>
+              <a href="tel:+254712345678">+254 115 820 981</a>
+            </li>
+            <li>
+              <strong>Instagram:</strong>
+              <a
+                href="https://www.instagram.com/annette_gachamba/"
+                target="_blank"
+                >@annette_gachamba</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&COPY; 2025 Annette's World. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

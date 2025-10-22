@@ -1,0 +1,21 @@
+For the birthday pop-up banner;
+HTML
+<div class="birthday-banner">
+      🎉 Happy Birthday Annette 🎉
+      <br />
+      Wishing you endless joy and blessings 💖
+    </div>
+CSS
+.birthday-banner {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+For VIDEOS AND IMAGES
+to view, use Lightbox or GLightbox
+
+Move editsvid5 to solo folder and rename accordingly
