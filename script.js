@@ -273,7 +273,7 @@ const triviaQuestions = [
   {
     question: "What is her Instagram username?",
     options: [
-      "@_.hastings",
+      "@__.hastings",
       "@hastings_",
       "@annette_gachamba",
       "@hastings.annette",
