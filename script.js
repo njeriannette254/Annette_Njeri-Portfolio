@@ -226,7 +226,6 @@ function loadGallery(galleryId, config) {
     video.src = `${config.folder}/${config.vidPrefix}${i}.mp4`;
     video.controls = false; // GLightbox provides controls
     video.preload = "metadata";
-    video.loading = "lazy";
     // Create a simple play icon overlay for videos (visual cue)
     const playOverlay = document.createElement("div");
     playOverlay.classList.add("play-overlay");
@@ -243,17 +242,20 @@ document.addEventListener("DOMContentLoaded", () => {
   for (const id in galleries) {
     loadGallery(id, galleries[id]);
   }
-  // Initialize GLightbox AFTER all gallery items are loaded
-  GLightbox({
-    selector: ".glightbox",
-    touchNavigation: true,
-    loop: true,
-    autoplayVideos: true,
-    plyr: {
-      css: "https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.css",
-      js: "https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.min.js",
-    },
-  });
+
+  // Initialize after a short delay to ensure DOM updates are rendered
+  setTimeout(() => {
+    GLightbox({
+      selector: ".glightbox",
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true,
+      plyr: {
+        css: "https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.css",
+        js: "https://cdn.jsdelivr.net/npm/plyr@3/dist/plyr.min.js",
+      },
+    });
+  }, 100);
 });
 
 // Trivia
