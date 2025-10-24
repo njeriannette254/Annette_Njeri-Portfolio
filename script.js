@@ -276,7 +276,7 @@ const triviaQuestions = [
       "@annette_gachamba",
       "@hastings.annette",
     ],
-    correctAnswer: "@_.hastings",
+    correctAnswer: "@__.hastings",
   },
   {
     question: "What’s her favorite food?",
